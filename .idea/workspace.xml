@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95d25a4b-15d8-4abf-89e0-b6d142b45e77" name="Default Changelist" comment="[AMO-381] Setup">
-      <change afterPath="$PROJECT_DIR$/es6/__tests__/index.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es6/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    <list default="true" id="95d25a4b-15d8-4abf-89e0-b6d142b45e77" name="Default Changelist" comment="[AMO-381] Adds card number validation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +138,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602850809896</updated>
-      <workItem from="1602850810927" duration="8316000" />
+      <workItem from="1602850810927" duration="9474000" />
     </task>
     <task id="LOCAL-00001" summary="[AMO-381] Setup">
       <created>1602862026682</created>
@@ -149,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602862026682</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[AMO-381] Adds card number validation">
+      <created>1602862136466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602862136466</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +173,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[AMO-381] Setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="[AMO-381] Setup" />
+    <MESSAGE value="[AMO-381] Adds card number validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="[AMO-381] Adds card number validation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="123" width="1612" height="1217" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602856051340">
@@ -179,22 +185,22 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="607" y="540" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1602852900589" />
-    <state width="1812" height="425" key="GridCell.Tab.0.bottom" timestamp="1602861909199">
+    <state width="1812" height="425" key="GridCell.Tab.0.bottom" timestamp="1602862941437">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1602861909199" />
-    <state width="1812" height="425" key="GridCell.Tab.0.center" timestamp="1602861909199">
+    <state width="1812" height="425" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1602862941437" />
+    <state width="1812" height="425" key="GridCell.Tab.0.center" timestamp="1602862941437">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1602861909199" />
-    <state width="1812" height="425" key="GridCell.Tab.0.left" timestamp="1602861909198">
+    <state width="1812" height="425" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1602862941437" />
+    <state width="1812" height="425" key="GridCell.Tab.0.left" timestamp="1602862941437">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1602861909198" />
-    <state width="1812" height="425" key="GridCell.Tab.0.right" timestamp="1602861909199">
+    <state width="1812" height="425" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1602862941437" />
+    <state width="1812" height="425" key="GridCell.Tab.0.right" timestamp="1602862941437">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1602861909199" />
+    <state width="1812" height="425" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1602862941437" />
     <state x="647" y="441" key="RollbackChangesDialog" timestamp="1602857288101">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -203,6 +209,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="407" y="370" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1602853778250" />
+    <state x="506" y="471" key="Vcs.Push.Dialog.v2" timestamp="1602862139180">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="506" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1602862139180" />
     <state x="704" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602854822640">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -219,9 +229,9 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="571" y="346" width="670" height="675" key="run.anything.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1602856896738" />
-    <state x="571" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1602858291448">
+    <state x="571" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1602862882539">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="571" y="348" width="670" height="676" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1602858291448" />
+    <state x="571" y="348" width="670" height="676" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1602862882539" />
   </component>
 </project>

@@ -19,23 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95d25a4b-15d8-4abf-89e0-b6d142b45e77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/card-validator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="95d25a4b-15d8-4abf-89e0-b6d142b45e77" name="Default Changelist" comment="[AMO-381] Setup">
       <change afterPath="$PROJECT_DIR$/es6/__tests__/index.test.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/es6/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/index.d.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,8 +140,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602850809896</updated>
-      <workItem from="1602850810927" duration="7963000" />
+      <workItem from="1602850810927" duration="8316000" />
     </task>
+    <task id="LOCAL-00001" summary="[AMO-381] Setup">
+      <created>1602862026682</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602862026682</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +166,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[AMO-381] Setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="[AMO-381] Setup" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="100" y="123" width="1612" height="1217" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602856051340">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -179,22 +179,22 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="607" y="540" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1602852900589" />
-    <state width="1812" height="425" key="GridCell.Tab.0.bottom" timestamp="1602861621216">
+    <state width="1812" height="425" key="GridCell.Tab.0.bottom" timestamp="1602861909199">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1602861621216" />
-    <state width="1812" height="425" key="GridCell.Tab.0.center" timestamp="1602861621215">
+    <state width="1812" height="425" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1602861909199" />
+    <state width="1812" height="425" key="GridCell.Tab.0.center" timestamp="1602861909199">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1602861621215" />
-    <state width="1812" height="425" key="GridCell.Tab.0.left" timestamp="1602861621215">
+    <state width="1812" height="425" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1602861909199" />
+    <state width="1812" height="425" key="GridCell.Tab.0.left" timestamp="1602861909198">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1602861621215" />
-    <state width="1812" height="425" key="GridCell.Tab.0.right" timestamp="1602861621215">
+    <state width="1812" height="425" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1602861909198" />
+    <state width="1812" height="425" key="GridCell.Tab.0.right" timestamp="1602861909199">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1602861621215" />
+    <state width="1812" height="425" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1602861909199" />
     <state x="647" y="441" key="RollbackChangesDialog" timestamp="1602857288101">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>

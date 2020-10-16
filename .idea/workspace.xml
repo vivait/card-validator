@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95d25a4b-15d8-4abf-89e0-b6d142b45e77" name="Default Changelist" comment="[AMO-381] Adds card number validation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="95d25a4b-15d8-4abf-89e0-b6d142b45e77" name="Default Changelist" comment="[AMO-381] Adds package metadata">
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +137,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602850809896</updated>
-      <workItem from="1602850810927" duration="9474000" />
+      <workItem from="1602850810927" duration="9543000" />
     </task>
     <task id="LOCAL-00001" summary="[AMO-381] Setup">
       <created>1602862026682</created>
@@ -154,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602862136466</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[AMO-381] Adds package metadata">
+      <created>1602863388715</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602863388715</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +180,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[AMO-381] Setup" />
     <MESSAGE value="[AMO-381] Adds card number validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="[AMO-381] Adds card number validation" />
+    <MESSAGE value="[AMO-381] Adds package metadata" />
+    <option name="LAST_COMMIT_MESSAGE" value="[AMO-381] Adds package metadata" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="123" width="1612" height="1217" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602856051340">
@@ -209,10 +216,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="407" y="370" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1602853778250" />
-    <state x="506" y="471" key="Vcs.Push.Dialog.v2" timestamp="1602862139180">
+    <state x="506" y="471" key="Vcs.Push.Dialog.v2" timestamp="1602863393079">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="506" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1602862139180" />
+    <state x="506" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1602863393079" />
     <state x="704" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602854822640">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>

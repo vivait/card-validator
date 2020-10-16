@@ -5,7 +5,7 @@
 
 ## Usage
 
-### predictAccountNumberForCardType(primaryAccountNumber: string): CardType | UnknownCardType
+### predictPaymentNetworkForAccountNumber(primaryAccountNumber: string): CardType | UnknownCardType
 Predict a card type and other relevant information based on its primary account number.
 
 #### Result:

@@ -1,10 +1,10 @@
-import {isValidCreditCard, predictAccountNumberForCardType} from "../index";
+import {isValidCreditCard, predictPaymentNetworkForAccountNumber} from "../index";
 import {DEFAULT_CARD_FORMAT} from "react-payment-inputs/lib/utils/cardTypes";
 
 const range = (min, max) => new Array(...Array(max - min).keys()).map(num => num + min);
 
 describe('card-validator', () => {
-    describe('predictAccountNumberForCardType()', () => {
+    describe('predictPaymentNetworkForAccountNumber()', () => {
         it.each(
             [
                 '371449635398431',
@@ -12,7 +12,7 @@ describe('card-validator', () => {
                 '348734493671000',
             ]
         )('will support a whole American Express (%s)', (primaryAccountNumber) => {
-            expect(predictAccountNumberForCardType(primaryAccountNumber)).toEqual(
+            expect(predictPaymentNetworkForAccountNumber(primaryAccountNumber)).toEqual(
                 {
                     recognised: true,
                     displayName: 'American Express',
@@ -36,7 +36,7 @@ describe('card-validator', () => {
                 '4111111111111111',
             ]
         )('will support a whole Visa (%s)', (primaryAccountNumber) => {
-            expect(predictAccountNumberForCardType(primaryAccountNumber)).toEqual(
+            expect(predictPaymentNetworkForAccountNumber(primaryAccountNumber)).toEqual(
                 {
                     recognised: true,
                     displayName: 'Visa',
@@ -59,7 +59,7 @@ describe('card-validator', () => {
                 ...range(23, 27).map(num => num + '55555555554444'),
             ]
         )('will support a whole MasterCard (%s)', (primaryAccountNumber) => {
-            expect(predictAccountNumberForCardType(primaryAccountNumber)).toEqual(
+            expect(predictPaymentNetworkForAccountNumber(primaryAccountNumber)).toEqual(
                 {
                     recognised: true,
                     displayName: 'Mastercard',
@@ -82,7 +82,7 @@ describe('card-validator', () => {
                 '35233',
             ],
         )('will support whole JCB (%s)', (primaryAccountNumber) => {
-            expect(predictAccountNumberForCardType(primaryAccountNumber)).toEqual(
+            expect(predictPaymentNetworkForAccountNumber(primaryAccountNumber)).toEqual(
                 {
                     recognised: true,
                     displayName: 'JCB',
@@ -106,7 +106,7 @@ describe('card-validator', () => {
                 ...range(644, 649).map(num => num + '5555555554444'),
             ],
         )('will support Discover (%s)', (primaryAccountNumber) => {
-            expect(predictAccountNumberForCardType(primaryAccountNumber)).toEqual(
+            expect(predictPaymentNetworkForAccountNumber(primaryAccountNumber)).toEqual(
                 {
                     recognised: true,
                     displayName: 'Discover',
@@ -128,7 +128,7 @@ describe('card-validator', () => {
                 ...range(900, 999).map(num => num + '5555555554444'),
             ],
         )('will support Default does not support (%s)', (primaryAccountNumber) => {
-            expect(predictAccountNumberForCardType(primaryAccountNumber)).toEqual(
+            expect(predictPaymentNetworkForAccountNumber(primaryAccountNumber)).toEqual(
                 {
                     recognised: false,
                     displayName: 'Unknown',
@@ -157,7 +157,7 @@ describe('card-validator', () => {
                 '675922222222',
             ]
         )('will support whole Maestro (%s)', (primaryAccountNumber) => {
-            expect(predictAccountNumberForCardType(primaryAccountNumber)).toEqual(
+            expect(predictPaymentNetworkForAccountNumber(primaryAccountNumber)).toEqual(
                 {
                     recognised: true,
                     displayName: 'Maestro',

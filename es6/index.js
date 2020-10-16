@@ -1,6 +1,6 @@
 import {CARD_TYPES, DEFAULT_CARD_FORMAT} from "react-payment-inputs/lib/utils/cardTypes";
 
-export function predictAccountNumberForCardType(primaryAccountNumber) {
+export function predictPaymentNetworkForAccountNumber(primaryAccountNumber) {
     const matching = CARD_TYPES.filter(({startPattern}) => startPattern.test(primaryAccountNumber)).values();
     const matchedArray = new Array(...matching);
 
@@ -55,7 +55,7 @@ export function isValidCreditCard(primaryAccountNumber) {
         sum += value;
     }
 
-    const lengthValid = predictAccountNumberForCardType(primaryAccountNumber).lengths.includes(formatted.length);
+    const lengthValid = predictPaymentNetworkForAccountNumber(primaryAccountNumber).lengths.includes(formatted.length);
 
     return (sum % 10) === 0 && lengthValid;
 }

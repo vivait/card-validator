@@ -40,6 +40,6 @@ declare module 'vivait-card-validator' {
         };
     }
 
-    export function predictAccountNumberForCardType(primaryAccountNumber: string): CardType | UnknownCardType;
+    export function predictPaymentNetworkForAccountNumber(primaryAccountNumber: string): CardType | UnknownCardType;
     export function isValidCreditCard(primaryAccountNumber: string): boolean;
 }

@@ -19,8 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95d25a4b-15d8-4abf-89e0-b6d142b45e77" name="Default Changelist" comment="[AMO-381] Adds package metadata">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="95d25a4b-15d8-4abf-89e0-b6d142b45e77" name="Default Changelist" comment="[AMO-381] Adds license">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es6/__tests__/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/es6/__tests__/index.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es6/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/es6/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +45,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -56,7 +61,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.card-validator.isValidCreditCard()">
+  <component name="RunManager" selected="Jest.index.test.js (1)">
     <configuration name="card-validator" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -121,8 +126,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.card-validator.isValidCreditCard()" />
         <item itemvalue="Jest.index.test.js (1)" />
+        <item itemvalue="Jest.card-validator.isValidCreditCard()" />
         <item itemvalue="Jest.card-validator.isValidCreditCard().will return true for '%s'" />
         <item itemvalue="Jest.index.test.js" />
         <item itemvalue="Jest.card-validator" />
@@ -137,7 +142,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602850809896</updated>
-      <workItem from="1602850810927" duration="9543000" />
+      <workItem from="1602850810927" duration="10209000" />
     </task>
     <task id="LOCAL-00001" summary="[AMO-381] Setup">
       <created>1602862026682</created>
@@ -160,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602863388715</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[AMO-381] Adds license">
+      <created>1602863525120</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602863525120</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,33 +193,34 @@
     <MESSAGE value="[AMO-381] Setup" />
     <MESSAGE value="[AMO-381] Adds card number validation" />
     <MESSAGE value="[AMO-381] Adds package metadata" />
-    <option name="LAST_COMMIT_MESSAGE" value="[AMO-381] Adds package metadata" />
+    <MESSAGE value="[AMO-381] Adds license" />
+    <option name="LAST_COMMIT_MESSAGE" value="[AMO-381] Adds license" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="123" width="1612" height="1217" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602856051340">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="100" y="123" width="1612" height="1217" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1602856051340" />
-    <state x="607" y="540" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602852900589">
+    <state x="607" y="540" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602863513295">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="607" y="540" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1602852900589" />
-    <state width="1812" height="425" key="GridCell.Tab.0.bottom" timestamp="1602862941437">
+    <state x="607" y="540" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1602863513295" />
+    <state width="1812" height="425" key="GridCell.Tab.0.bottom" timestamp="1602864097532">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1602862941437" />
-    <state width="1812" height="425" key="GridCell.Tab.0.center" timestamp="1602862941437">
+    <state width="1812" height="425" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1602864097532" />
+    <state width="1812" height="425" key="GridCell.Tab.0.center" timestamp="1602864097532">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1602862941437" />
-    <state width="1812" height="425" key="GridCell.Tab.0.left" timestamp="1602862941437">
+    <state width="1812" height="425" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1602864097532" />
+    <state width="1812" height="425" key="GridCell.Tab.0.left" timestamp="1602864097531">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1602862941437" />
-    <state width="1812" height="425" key="GridCell.Tab.0.right" timestamp="1602862941437">
+    <state width="1812" height="425" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1602864097531" />
+    <state width="1812" height="425" key="GridCell.Tab.0.right" timestamp="1602864097532">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1602862941437" />
+    <state width="1812" height="425" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1602864097532" />
     <state x="647" y="441" key="RollbackChangesDialog" timestamp="1602857288101">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -216,18 +229,18 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="407" y="370" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1602853778250" />
-    <state x="506" y="471" key="Vcs.Push.Dialog.v2" timestamp="1602863393079">
+    <state x="506" y="471" key="Vcs.Push.Dialog.v2" timestamp="1602863585090">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="506" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1602863393079" />
-    <state x="704" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602854822640">
+    <state x="506" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1602863585090" />
+    <state x="704" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602864024590">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="704" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1417@0.23.2560.1417" timestamp="1602854822640" />
-    <state x="604" y="486" width="604" height="490" key="find.popup" timestamp="1602852635416">
+    <state x="704" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1417@0.23.2560.1417" timestamp="1602864024590" />
+    <state x="604" y="486" width="604" height="548" key="find.popup" timestamp="1602864084959">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="604" y="486" width="604" height="490" key="find.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1602852635416" />
+    <state x="604" y="486" width="604" height="548" key="find.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1602864084959" />
     <state x="631" y="547" key="jetbrains.nodejs.interpreters-dialog" timestamp="1602853794758">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>

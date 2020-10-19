@@ -9,7 +9,8 @@ module.exports = {
          * Output location/name of assets.
          */
         filename: '[name].js',
-        path: __dirname
+        path: __dirname,
+        libraryTarget: 'umd',
     },
     resolve: {
         extensions: ['.js'],

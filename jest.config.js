@@ -8,6 +8,5 @@ module.exports = {
     'ts',
     'tsx'
   ],
-  testResultsProcessor: 'jest-teamcity-reporter',
   modulePathIgnorePatterns: ["<rootDir>/src/.*/__mocks__"]
 };

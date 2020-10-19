@@ -13,30 +13,38 @@ declare module 'vivait-card-validator' {
         | 'unknown';
 
     interface CardType {
-        recognised: true;
-        displayName: string;
-        type: Type;
-        format: RegExp;
-        startPattern: RegExp;
-        gaps: number[];
-        lengths: number[];
-        code: {
-            name: string;
-            length: number[];
+        readonly recognised: true;
+        readonly displayName: string;
+        readonly type: Type;
+        readonly format: RegExp;
+        readonly startPattern: RegExp;
+        /**
+         * Formatted as: nnnn nnnn nnnn nnnn
+         */
+        readonly primaryAccountNumberMaskFormat: string;
+        readonly gaps: number[];
+        readonly lengths: number[];
+        readonly code: {
+            readonly name: string;
+            readonly length: number[];
         };
     }
 
     interface UnknownCardType {
-        recognised: false;
-        displayName: 'Unknown';
-        type: 'unknown';
-        format: RegExp;
-        startPattern: RegExp;
-        gaps: [4, 8, 12, 16];
-        lengths: [15, 16, 17, 18, 19];
-        code: {
-            name: 'CVV';
-            length: [3, 4];
+        readonly recognised: false;
+        readonly displayName: 'Unknown';
+        readonly type: 'unknown';
+        readonly format: RegExp;
+        readonly startPattern: RegExp;
+        /**
+         * Formatted as: nnnn nnnn nnnn nnnn
+         */
+        readonly primaryAccountNumberMaskFormat: string;
+        readonly gaps: [4, 8, 12, 16];
+        readonly lengths: [15, 16, 17, 18, 19];
+        readonly code: {
+            readonly name: 'CVV';
+            readonly length: [3, 4];
         };
     }
 

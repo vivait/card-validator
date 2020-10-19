@@ -1,4 +1,4 @@
-import {isValidCreditCard, predictPaymentNetworkForAccountNumber} from "../index";
+import {isValidCreditCard, predictPaymentNetworkForAccountNumber, unknownCardType} from "../index";
 import {DEFAULT_CARD_FORMAT} from "react-payment-inputs/lib/utils/cardTypes";
 
 const range = (min, max) => new Array(...Array(max - min).keys()).map(num => num + min);
@@ -19,6 +19,7 @@ describe('card-validator', () => {
                     type: 'amex',
                     format: /(\d{1,4})(\d{1,6})?(\d{1,5})?/,
                     startPattern: /^3[47]/,
+                    mask: 'nnnn nnnnnn nnnnn',
                     gaps: [4, 10],
                     lengths: [15],
                     code: {
@@ -44,7 +45,8 @@ describe('card-validator', () => {
                     format: DEFAULT_CARD_FORMAT,
                     startPattern: /^4/,
                     gaps: [4, 8, 12],
-                    lengths: [16, 18, 19],
+                    lengths: [19, 18, 16],
+                    mask: "nnnn nnnn nnnn nnnnnnn",
                     code: {
                         name: 'CVV',
                         length: [3],
@@ -68,6 +70,7 @@ describe('card-validator', () => {
                     startPattern: /^(5[1-5]|677189)|^(222[1-9]|2[3-6]\d{2}|27[0-1]\d|2720)/,
                     gaps: [4, 8, 12],
                     lengths: [16],
+                    mask: 'nnnn nnnn nnnn nnnn',
                     code: {
                         name: 'CVC',
                         length: [3],
@@ -90,7 +93,13 @@ describe('card-validator', () => {
                     format: DEFAULT_CARD_FORMAT,
                     startPattern: /^35/,
                     gaps: [4, 8, 12],
-                    lengths: [16, 17, 18, 19],
+                    lengths: [
+                        19,
+                        18,
+                        17,
+                        16
+                    ],
+                    mask: 'nnnn nnnn nnnn nnnnnnn',
                     code: {
                         name: 'CVV',
                         length: [3],
@@ -114,7 +123,11 @@ describe('card-validator', () => {
                     format: DEFAULT_CARD_FORMAT,
                     startPattern: /^(6011|65|64[4-9]|622)/,
                     gaps: [4, 8, 12],
-                    lengths: [16, 19],
+                    lengths: [
+                        19,
+                        16
+                    ],
+                    mask: "nnnn nnnn nnnn nnnnnnn",
                     code: {
                         name: 'CID',
                         length: [3],
@@ -128,21 +141,7 @@ describe('card-validator', () => {
                 ...range(900, 999).map(num => num + '5555555554444'),
             ],
         )('will support Default does not support (%s)', (primaryAccountNumber) => {
-            expect(predictPaymentNetworkForAccountNumber(primaryAccountNumber)).toEqual(
-                {
-                    recognised: false,
-                    displayName: 'Unknown',
-                    type: 'unknown',
-                    format: DEFAULT_CARD_FORMAT,
-                    startPattern: /^$/,
-                    gaps: [4, 8, 12, 16],
-                    lengths: [15, 16, 17, 18, 19],
-                    code: {
-                        name: 'CVV',
-                        length: [3, 4],
-                    },
-                },
-            );
+            expect(predictPaymentNetworkForAccountNumber(primaryAccountNumber)).toEqual(unknownCardType);
         });
 
 
@@ -165,7 +164,17 @@ describe('card-validator', () => {
                     format: DEFAULT_CARD_FORMAT,
                     startPattern: /^(5018|5020|5038|6304|6703|6708|6759|676[1-3])/,
                     gaps: [4, 8, 12],
-                    lengths: [12, 13, 14, 15, 16, 17, 18, 19],
+                    lengths: [
+                        19,
+                        18,
+                        17,
+                        16,
+                        15,
+                        14,
+                        13,
+                        12
+                    ],
+                    'mask': "nnnn nnnn nnnn nnnnnnn",
                     code: {
                         name: 'CVC',
                         length: [

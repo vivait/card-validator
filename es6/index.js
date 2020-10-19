@@ -22,12 +22,20 @@ export function predictPaymentNetworkForAccountNumber(primaryAccountNumber) {
     if (matchedArray.length === 1) {
         const {displayName, type, format, startPattern, gaps, lengths, code} = matchedArray[0];
 
+        const maskCharacters = [...''.padStart(getLargest(lengths), 'n')];
+        const maskCharactersWithSpaces = maskCharacters.map(
+            (value, index) => gaps.includes(index)
+                ? ` ${value}`
+                : value
+        );
+
         return {
             recognised: true,
             displayName,
             type,
             format,
             startPattern,
+            mask: maskCharactersWithSpaces.join(''),
             gaps,
             lengths,
             code: {
@@ -47,4 +55,18 @@ export function isValidCreditCard(primaryAccountNumber) {
     const lengthValid = predictPaymentNetworkForAccountNumber(primaryAccountNumber).lengths.includes(formatted.length);
 
     return isLuhnValid && lengthValid;
+}
+
+function getLargest(list) {
+    return list.sort((a, b) => {
+        if (a > b) {
+            return -1;
+        }
+
+        if (b > a) {
+            return 1;
+        }
+
+        return 0;
+    })[0]
 }

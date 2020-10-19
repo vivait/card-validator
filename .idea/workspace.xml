@@ -19,9 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95d25a4b-15d8-4abf-89e0-b6d142b45e77" name="Default Changelist" comment="[AMO-381] Upgrades to export as library">
+    <list default="true" id="95d25a4b-15d8-4abf-89e0-b6d142b45e77" name="Default Changelist" comment="[AMO-381] Upgrades to validate using Luhns algorithm from react-payment-inputs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es6/__tests__/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/es6/__tests__/index.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/es6/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/es6/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +143,8 @@
       <option name="presentableId" value="Default" />
       <updated>1602850809896</updated>
       <workItem from="1602850810927" duration="10651000" />
-      <workItem from="1603097662986" duration="1582000" />
+      <workItem from="1603097662986" duration="1714000" />
+      <workItem from="1603121401720" duration="1410000" />
     </task>
     <task id="LOCAL-00001" summary="[AMO-381] Setup">
       <created>1602862026682</created>
@@ -191,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603098795190</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[AMO-381] Upgrades to validate using Luhns algorithm from react-payment-inputs">
+      <created>1603099462289</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603099462289</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,33 +228,34 @@
     <MESSAGE value="[AMO-381] Renames" />
     <MESSAGE value="[AMO-381] Upgrades to export" />
     <MESSAGE value="[AMO-381] Upgrades to export as library" />
-    <option name="LAST_COMMIT_MESSAGE" value="[AMO-381] Upgrades to export as library" />
+    <MESSAGE value="[AMO-381] Upgrades to validate using Luhns algorithm from react-payment-inputs" />
+    <option name="LAST_COMMIT_MESSAGE" value="[AMO-381] Upgrades to validate using Luhns algorithm from react-payment-inputs" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="100" y="123" width="1612" height="1217" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602856051340">
+    <state x="100" y="123" width="1612" height="1217" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1603122692486">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="100" y="123" width="1612" height="1217" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1602856051340" />
+    <state x="100" y="123" width="1612" height="1217" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1603122692486" />
     <state x="607" y="540" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602863513295">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="607" y="540" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1602863513295" />
-    <state width="1812" height="425" key="GridCell.Tab.0.bottom" timestamp="1603099311741">
+    <state width="1812" height="425" key="GridCell.Tab.0.bottom" timestamp="1603122683178">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1603099311741" />
-    <state width="1812" height="425" key="GridCell.Tab.0.center" timestamp="1603099311740">
+    <state width="1812" height="425" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1603122683178" />
+    <state width="1812" height="425" key="GridCell.Tab.0.center" timestamp="1603122683177">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1603099311740" />
-    <state width="1812" height="425" key="GridCell.Tab.0.left" timestamp="1603099311740">
+    <state width="1812" height="425" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1603122683177" />
+    <state width="1812" height="425" key="GridCell.Tab.0.left" timestamp="1603122683177">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1603099311740" />
-    <state width="1812" height="425" key="GridCell.Tab.0.right" timestamp="1603099311740">
+    <state width="1812" height="425" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1603122683177" />
+    <state width="1812" height="425" key="GridCell.Tab.0.right" timestamp="1603122683177">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1812" height="425" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1603099311740" />
+    <state width="1812" height="425" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1603122683177" />
     <state x="647" y="441" key="RollbackChangesDialog" timestamp="1602857288101">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -252,14 +264,14 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="407" y="370" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1603097806342" />
-    <state x="506" y="471" key="Vcs.Push.Dialog.v2" timestamp="1603099015780">
+    <state x="506" y="471" key="Vcs.Push.Dialog.v2" timestamp="1603099480653">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="506" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1603099015780" />
-    <state x="704" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602864024590">
+    <state x="506" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1603099480653" />
+    <state x="704" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603121597291">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="704" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1417@0.23.2560.1417" timestamp="1602864024590" />
+    <state x="704" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1417@0.23.2560.1417" timestamp="1603121597291" />
     <state x="604" y="486" width="604" height="548" key="find.popup" timestamp="1602864084959">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>

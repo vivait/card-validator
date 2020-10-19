@@ -11,6 +11,7 @@ module.exports = {
         filename: '[name].js',
         path: __dirname,
         libraryTarget: 'umd',
+        library: 'vivait-card-validator',
     },
     resolve: {
         extensions: ['.js'],

@@ -35,7 +35,7 @@ export function predictPaymentNetworkForAccountNumber(primaryAccountNumber) {
             type,
             format,
             startPattern,
-            mask: maskCharactersWithSpaces.join(''),
+            primaryAccountNumberMaskFormat: maskCharactersWithSpaces.join(''),
             gaps,
             lengths,
             code: {

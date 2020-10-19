@@ -22,3 +22,4 @@ Predict a card type and other relevant information based on its primary account 
 |code.length| number[]| Valid lengths for the network's security number. |
 
 ### isValidCreditCard(primaryAccountNumber: string): boolean
+Checks if the entire primay account number is valid, checks using the luhns algorithm and the length of the card.

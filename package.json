@@ -1,6 +1,6 @@
 {
   "name": "vivait-card-validator",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "dependencies": {
     "react-payment-inputs": "^1.1.7"

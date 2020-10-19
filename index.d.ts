@@ -1,6 +1,6 @@
 declare module 'vivait-card-validator' {
     type Type =
-        'visa'
+        | 'visa'
         | 'mastercard'
         | 'amex'
         | 'dinersclub'
@@ -39,6 +39,8 @@ declare module 'vivait-card-validator' {
             length: [3, 4];
         };
     }
+
+    export const unknownCardType: UnknownCardType;
 
     export function predictPaymentNetworkForAccountNumber(primaryAccountNumber: string): CardType | UnknownCardType;
     export function isValidCreditCard(primaryAccountNumber: string): boolean;

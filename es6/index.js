@@ -9,6 +9,7 @@ export const unknownCardType = {
     startPattern: /^$/,
     gaps: [4, 8, 12, 16],
     lengths: [15, 16, 17, 18, 19],
+    primaryAccountNumberMaskFormat: 'nnnn nnnn nnnn nnnn nnn',
     code: {
         name: 'CVV',
         length: [3, 4],

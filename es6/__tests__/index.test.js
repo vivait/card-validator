@@ -19,7 +19,7 @@ describe('card-validator', () => {
                     type: 'amex',
                     format: /(\d{1,4})(\d{1,6})?(\d{1,5})?/,
                     startPattern: /^3[47]/,
-                    mask: 'nnnn nnnnnn nnnnn',
+                    primaryAccountNumberMaskFormat: 'nnnn nnnnnn nnnnn',
                     gaps: [4, 10],
                     lengths: [15],
                     code: {
@@ -46,7 +46,7 @@ describe('card-validator', () => {
                     startPattern: /^4/,
                     gaps: [4, 8, 12],
                     lengths: [19, 18, 16],
-                    mask: "nnnn nnnn nnnn nnnnnnn",
+                    primaryAccountNumberMaskFormat: "nnnn nnnn nnnn nnnnnnn",
                     code: {
                         name: 'CVV',
                         length: [3],
@@ -70,7 +70,7 @@ describe('card-validator', () => {
                     startPattern: /^(5[1-5]|677189)|^(222[1-9]|2[3-6]\d{2}|27[0-1]\d|2720)/,
                     gaps: [4, 8, 12],
                     lengths: [16],
-                    mask: 'nnnn nnnn nnnn nnnn',
+                    primaryAccountNumberMaskFormat: 'nnnn nnnn nnnn nnnn',
                     code: {
                         name: 'CVC',
                         length: [3],
@@ -99,7 +99,7 @@ describe('card-validator', () => {
                         17,
                         16
                     ],
-                    mask: 'nnnn nnnn nnnn nnnnnnn',
+                    primaryAccountNumberMaskFormat: 'nnnn nnnn nnnn nnnnnnn',
                     code: {
                         name: 'CVV',
                         length: [3],
@@ -127,7 +127,7 @@ describe('card-validator', () => {
                         19,
                         16
                     ],
-                    mask: "nnnn nnnn nnnn nnnnnnn",
+                    primaryAccountNumberMaskFormat: "nnnn nnnn nnnn nnnnnnn",
                     code: {
                         name: 'CID',
                         length: [3],
@@ -143,7 +143,6 @@ describe('card-validator', () => {
         )('will support Default does not support (%s)', (primaryAccountNumber) => {
             expect(predictPaymentNetworkForAccountNumber(primaryAccountNumber)).toEqual(unknownCardType);
         });
-
 
         it.each(
             [
@@ -174,7 +173,7 @@ describe('card-validator', () => {
                         13,
                         12
                     ],
-                    'mask': "nnnn nnnn nnnn nnnnnnn",
+                    'primaryAccountNumberMaskFormat': "nnnn nnnn nnnn nnnnnnn",
                     code: {
                         name: 'CVC',
                         length: [

@@ -8,7 +8,7 @@
 ### predictPaymentNetworkForAccountNumber(primaryAccountNumber: string): CardType | UnknownCardType
 Predict a card type and other relevant information based on its primary account number.
 
-#### Result:
+#### Result (CardType | UnknownCardType):
 | Property | type | description |
 | --- | ---|---|
 |`recognised`| `boolean`| If the type of card was matched against the database. |
@@ -22,3 +22,4 @@ Predict a card type and other relevant information based on its primary account 
 |code.length| number[]| Valid lengths for the network's security number. |
 
 ### isValidCreditCard(primaryAccountNumber: string): boolean
+Checks if the entire primay account number is valid, checks using the luhns algorithm and the length of the card number.

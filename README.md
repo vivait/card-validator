@@ -9,6 +9,10 @@ A simple library built around https://github.com/medipass/react-payment-inputs t
 ## Usage
 
 ### predictPaymentNetworkForAccountNumber(primaryAccountNumber: string): CardType | UnknownCardType
+```js
+import { predictPaymentNetworkForAccountNumber } from 'vivait-card-validator';
+```
+
 Predict a card type and other relevant information based on its primary account number.
 
 #### Result (CardType | UnknownCardType):
@@ -25,4 +29,7 @@ Predict a card type and other relevant information based on its primary account 
 |code.length| number[]| Valid lengths for the network's security number. |
 
 ### isValidCreditCard(primaryAccountNumber: string): boolean
+```js
+import { isValidCreditCard } from 'vivait-card-validator';
+```
 Checks if the entire primay account number is valid, checks using the luhns algorithm and the length of the card number.

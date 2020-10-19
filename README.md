@@ -1,7 +1,7 @@
 # vivait-card-validator
 A simple library built around https://github.com/medipass/react-payment-inputs that exposes its validation in more convienent APIs.
 
-> :warning: This library is still in alpha stage development and isn't stable.
+> :warning: This library is still in its alpha stage development and isn't stable.
 
 ## Install
 `yarn add https://github.com/vivait/card-validator`

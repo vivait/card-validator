@@ -1,4 +1,7 @@
-# card-validator
+# vivait-card-validator
+A simple library built around https://github.com/medipass/react-payment-inputs that exposes its validation in more convienent APIs.
+
+> :warning: This library is still in its alpha stage development and isn't stable.
 
 ## Install
 `yarn add https://github.com/vivait/card-validator`
@@ -6,6 +9,10 @@
 ## Usage
 
 ### predictPaymentNetworkForAccountNumber(primaryAccountNumber: string): CardType | UnknownCardType
+```js
+import { predictPaymentNetworkForAccountNumber } from 'vivait-card-validator';
+```
+
 Predict a card type and other relevant information based on its primary account number.
 
 #### Result (CardType | UnknownCardType):
@@ -22,4 +29,7 @@ Predict a card type and other relevant information based on its primary account 
 |code.length| number[]| Valid lengths for the network's security number. |
 
 ### isValidCreditCard(primaryAccountNumber: string): boolean
+```js
+import { isValidCreditCard } from 'vivait-card-validator';
+```
 Checks if the entire primay account number is valid, checks using the luhns algorithm and the length of the card number.

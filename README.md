@@ -8,7 +8,7 @@
 ### predictPaymentNetworkForAccountNumber(primaryAccountNumber: string): CardType | UnknownCardType
 Predict a card type and other relevant information based on its primary account number.
 
-#### Result:
+#### Result (CardType | UnknownCardType):
 | Property | type | description |
 | --- | ---|---|
 |`recognised`| `boolean`| If the type of card was matched against the database. |

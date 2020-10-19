@@ -1,4 +1,5 @@
 import {CARD_TYPES, DEFAULT_CARD_FORMAT} from "react-payment-inputs/lib/utils/cardTypes";
+import {validateLuhn} from "react-payment-inputs/lib/utils/validator";
 
 export function predictPaymentNetworkForAccountNumber(primaryAccountNumber) {
     const matching = CARD_TYPES.filter(({startPattern}) => startPattern.test(primaryAccountNumber)).values();
@@ -40,22 +41,8 @@ export function predictPaymentNetworkForAccountNumber(primaryAccountNumber) {
 export function isValidCreditCard(primaryAccountNumber) {
     const formatted = primaryAccountNumber.replace(/\s/g, '');
 
-    let sum = parseInt(formatted.charAt(formatted.length - 1));
-    for (let i = 0; i < formatted.length - 1; i++) {
-        let value = parseInt(formatted.charAt(i));
-
-        if (i % 2 === 0) {
-            value *= 2;
-        }
-
-        if (value > 9) {
-            value -= 9;
-        }
-
-        sum += value;
-    }
-
+    const isLuhnValid = validateLuhn(formatted);
     const lengthValid = predictPaymentNetworkForAccountNumber(primaryAccountNumber).lengths.includes(formatted.length);
 
-    return (sum % 10) === 0 && lengthValid;
+    return isLuhnValid && lengthValid;
 }
